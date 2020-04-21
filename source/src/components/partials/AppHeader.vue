@@ -6,9 +6,10 @@
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center ml-auto ml-lg-0">
       <b-navbar-nav class="header-links d-none d-md-flex">
-        <b-nav-item href="#"><i class="mdi mdi-image-filter"></i>Gallery</b-nav-item>
-        <b-nav-item href="#" active><i class="mdi mdi-email-outline"></i>Inbox</b-nav-item>
-        <b-nav-item href="#"><i class="mdi mdi-calendar"></i>Calendar</b-nav-item>
+        <b-nav-item href="#"><i class="mdi mdi-image-filter"></i><router-link style="color: white" to="/category">Kategori</router-link></b-nav-item>
+        <b-nav-item href="#"><i class="mdi mdi-image-filter"></i><router-link style="color: white" to="/subCategory">Alt Kateg.</router-link></b-nav-item>
+        <b-nav-item href="#"><i class="mdi mdi-image-filter"></i><router-link style="color: white" to="/parameter">Parametre</router-link></b-nav-item>
+        <b-nav-item href="#"><i class="mdi mdi-image-filter"></i><router-link style="color: white" to="/parameter">Yorumlar</router-link></b-nav-item>
       </b-navbar-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">

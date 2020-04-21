@@ -3,6 +3,10 @@ import Router from 'vue-router'
 
 // Dashboard Components
 import dashboard from '../views/dashboard'
+import home from '../pages/home'
+import category from '../pages/category'
+import subCategory from '../pages/subCategory'
+import parameter from '../pages/parameter'
 
 // Widgets
 import widgets from '../views/widgets'
@@ -37,108 +41,127 @@ Vue.use(Router)
 export default new Router({
   linkActiveClass: 'active',
   routes: [{
-    path: '/',
+    path: '/dashboard',
     name: 'dashboard',
     component: dashboard
+  }, {
+    path: '/',
+    name: 'home',
+    component: home
   },
-  {
-    path: '/widgets',
-    name: 'widgets',
-    component: widgets
-  },
-  {
-    path: '/404',
-    name: 'error-404',
-    component: error404
-  },
-  {
-    path: '/500',
-    name: 'error-500',
-    component: error500
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: login
-  },
-  {
-    path: '/register',
-    name: 'register',
-    component: register
-  },
-  {
-    path: '/alerts',
-    name: 'alerts',
-    component: alerts
-  },
-  {
-    path: '/badges',
-    name: 'badges',
-    component: badges
-  },
-  {
-    path: '/breadcrumbs',
-    name: 'breadcrumbs',
-    component: breadcrumbs
-  },
-  {
-    path: '/buttons',
-    name: 'buttons',
-    component: buttons
-  },
-  {
-    path: '/carousel',
-    name: 'carousel',
-    component: carousel
-  },
-  {
-    path: '/dropdowns',
-    name: 'dropdowns',
-    component: dropdowns
-  },
-  {
-    path: '/icons',
-    name: 'icons',
-    component: icons
-  },
-  {
-    path: '/modals',
-    name: 'modals',
-    component: modals
-  },
-  {
-    path: '/paginations',
-    name: 'paginations',
-    component: paginations
-  },
-  {
-    path: '/progress',
-    name: 'progress',
-    component: progress
-  },
-  {
-    path: '/tables',
-    name: 'tables',
-    component: tables
-  },
-  {
-    path: '/typography',
-    name: 'typography',
-    component: typography
-  },
-  {
-    path: '/tabs',
-    name: 'tabs',
-    component: tabs
-  },
-  {
-    path: '/tooltips',
-    name: 'tooltips',
-    component: tooltips
-  },
-  {
-    path: '/forms',
-    name: 'forms',
-    component: forms
-  }]
+    {
+      path: '/category',
+      name: 'category',
+      component: category
+    },
+    {
+      path: '/subCategory',
+      name: 'subCategory',
+      component: subCategory
+    },
+    {
+      path: '/parameter',
+      name: 'parameter',
+      component: parameter
+    },
+    {
+      path: '/widgets',
+      name: 'widgets',
+      component: widgets
+    },
+    {
+      path: '/404',
+      name: 'error-404',
+      component: error404
+    },
+    {
+      path: '/500',
+      name: 'error-500',
+      component: error500
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
+    },
+    {
+      path: '/alerts',
+      name: 'alerts',
+      component: alerts
+    },
+    {
+      path: '/badges',
+      name: 'badges',
+      component: badges
+    },
+    {
+      path: '/breadcrumbs',
+      name: 'breadcrumbs',
+      component: breadcrumbs
+    },
+    {
+      path: '/buttons',
+      name: 'buttons',
+      component: buttons
+    },
+    {
+      path: '/carousel',
+      name: 'carousel',
+      component: carousel
+    },
+    {
+      path: '/dropdowns',
+      name: 'dropdowns',
+      component: dropdowns
+    },
+    {
+      path: '/icons',
+      name: 'icons',
+      component: icons
+    },
+    {
+      path: '/modals',
+      name: 'modals',
+      component: modals
+    },
+    {
+      path: '/paginations',
+      name: 'paginations',
+      component: paginations
+    },
+    {
+      path: '/progress',
+      name: 'progress',
+      component: progress
+    },
+    {
+      path: '/tables',
+      name: 'tables',
+      component: tables
+    },
+    {
+      path: '/typography',
+      name: 'typography',
+      component: typography
+    },
+    {
+      path: '/tabs',
+      name: 'tabs',
+      component: tabs
+    },
+    {
+      path: '/tooltips',
+      name: 'tooltips',
+      component: tooltips
+    },
+    {
+      path: '/forms',
+      name: 'forms',
+      component: forms
+    }]
 })

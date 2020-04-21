@@ -27,11 +27,8 @@
                 <div class="mt-5">
                   <a class="btn btn-block btn-primary btn-lg font-weight-medium" href="../../index.html">Register</a>
                 </div>
-                <div class="mt-2 w-75 mx-auto">
-                  <b-form-checkbox id="checkbox1" v-model="status" value="accepted" unchecked-value="not_accepted">I accept the terms and use</b-form-checkbox>
-                </div>
                 <div class="mt-2 text-center">
-                  <a href="login.html" class="auth-link text-black">Already have an account? <span class="font-weight-medium">Sign in</span></a>
+                  <a class="auth-link text-black">Already have an account? <span class="font-weight-medium"><router-link to="/login">Sign in</router-link></span></a>
                 </div>
               </form>
             </form>
